@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,body{
+  max-width: 100vw;
+  background: #ffffff;
+  font-family: 'Jost-Regular'; 
+}
+
+body{
+  overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+  
+}
+
+strong {
+  color: #a0830b;
+  font-weight: 700;
+}
+
+.notification a {
+  text-decoration: underline;
+}
+
+.faq a {
+  text-decoration: underline;
+  color: #a0830b;
+  font-weight: 700;
+}
+ 
+*::-webkit-scrollbar-track {
+  // box-shadow: inset 0 0 6px rgba(255, 255, 255, 1);
+  background: #ffffff;
+}
+
+
+@-webkit-keyframes autofill {
+  0%,100% {
+      color: #666;
+      background: transparent;
+  }
+}
+
+
+// html.dark input:-webkit-autofill {
+//   -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+//   -webkit-animation-name: autofill;
+//   -webkit-animation-fill-mode: both;
+// }
+ 
+*::-webkit-scrollbar-thumb {
+  // background-color: #617091;
+  background-color: #1b1d2888;
+  // background-color: #E1E6ED;
+
+  border-radius: 20px;
+}
+
+.custom-skeleton {
+   
+  background: #ebebeb;
+  animation: shimmer 1.3s infinite linear;
+  background: linear-gradient(
+    90deg,
+    #ebebeb 25%,
+    #f5f5f5 50%,
+    #ebebeb 75%
+  );
+  background-size: 200% 100%;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: -100%;
+    }
+  }
+
